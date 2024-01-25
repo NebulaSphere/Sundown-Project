@@ -16,6 +16,7 @@ html,body{
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw;
+    overflow-x: hidden;
 }
 
 nav{
@@ -99,6 +100,7 @@ nav{
 }
 
 #page1 video {
+    position: relative;
     width: 100%;
     border-radius: 25px;
     margin-top: 4vw;
@@ -106,52 +108,82 @@ nav{
 
 #hero-shape {
     position: absolute;
-    height: 36vw;
-    width: 36vw;
-    background-color: #FE320A;
+    height: 32vw;
+    width: 40vw;
+    right: -20px;
+    top: 70vh;
+}
+
+#hero-1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#FE320A , #ff640a);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(30px);
+    animation: 5s linear infinite alternate anime3;
+}
+
+#hero-2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 10vw;
+    background-color: #fe330a;
     border-radius: 50%;
-    right: 0;
-    top: 65vh;
-    filter: blur(20px);
+    filter: blur(30px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#hero-3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fe4f0a86;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation-name: anime2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 
+@keyframes anime1{
+    from{
+        transform: translate(-10% , 10%);
+    }
+    to{
+        transform: translate(10% , -10%);
+    }
+}
+
+@keyframes anime2{
+    from{
+        /* transform: translateY(3%); */
+        transform: rotateZ(-360deg);
+    }
+    to{
+        /* transform: translateY(-3% ); */
+        transform: rotateZ(360deg);
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes anime3{
+    from{
+        transform: translateY(3%);
+    }
+    to{
+        transform: translateY(-3%);
+    }
+}
 
 
 
