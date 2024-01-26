@@ -235,14 +235,16 @@ nav{
 #page2-bottom{
     height: 80vh;
     width: 100%;
-    padding: 4.6vw;
+    padding: 5.6vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 9;
 }
 
 #page2-bottom h1{
-    font-size: 3.8vw;
+    font-size: 3.9vw;
     letter-spacing: -0.25vw;
     line-height: 4vw;
     width: 55%;
@@ -255,26 +257,98 @@ nav{
 #bottom-part2 img{
     width: 100%;
     border-radius: 10px;
+    margin-top: 18vw;
 }
 
 #bottom-part2 p{
     font-weight: 100;
-    font-size: 17px;
-    line-height: 22px;
+    color: rgba(0, 0, 0, 0.836);
+    text-align: justify;
+    font-size: 18px;
+    line-height: 27px;
+    word-spacing: -4px;
+    margin-top: 3vw;
 }
 
 #page2 #gooey{
     position: absolute;
     height: 30vw;
     width: 30vw;
-    border-radius: 50%;
-    background-color: #FE320A;
     top: 58%;
     left: 25%;
 }
 
+#gooey #gooey1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#ff780a , #fe3b0a);
+    filter: blur(15px);
+    animation: gooey1 5s linear infinite alternate;
+}
+
+#gooey #gooey2{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #fe0a0ac2;
+    /* background-color: blue; */
+    filter: blur(45px);
+    animation: gooey2 4s linear infinite alternate;
+}
+
+@keyframes gooey1 {
+    from{
+        transform: translate(10% , -15%) skew(-2deg) rotate(-5deg);
+    }
+    to{
+        transform: translate(-10% , 10%) skew(6deg) rotate(180deg);
+    }
+}
+
+@keyframes gooey2 {
+    from{
+        transform: translate(5% , -7%) skew(4deg);
+    }
+    to{
+        transform: translate(-5% , 13%) skew(-2deg);
+    }
+}
 
 
+
+
+/* ------------- #page3 styling ------------- */
+
+
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.elem{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    /* background-color: orange; */
+    border-bottom: 1px solid rgb(184, 184, 184);
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+}
+
+.overlay{
+    
+}
 
 
 
