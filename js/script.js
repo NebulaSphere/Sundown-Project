@@ -2,7 +2,7 @@
 // locomotive scrolling like smooth scrolling
 
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector('#main'),
     smooth: true
 });
 
