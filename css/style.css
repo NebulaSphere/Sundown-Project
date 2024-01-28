@@ -35,22 +35,29 @@ nav {
     justify-content: space-between;
 }
 
+#page1 nav img{
+    height: 80px;
+}
+
 #nav-part2 {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 0.5vw;
 }
 
 #nav-part2 h4 {
     position: relative;
-    padding: 10px 20px;
-    border: 1px solid #8a8a8a;
+    padding: 14px 28px;
+    border: 1px solid #c7c7c7;
     border-radius: 50px;
     color: black;
     font-weight: 500;
     font-size: 18px;
     overflow: hidden;
     transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #nav-part2 h4 a {
@@ -90,12 +97,13 @@ nav {
     justify-content: space-between;
     border-bottom: 1px solid #8a8a8a;
     padding-bottom: 2.5vw;
+    margin-top: 2vw;
 }
 
 #left h3 {
     width: 25vw;
-    font-size: 1.8vw;
-    line-height: 1.9vw;
+    font-size: 1.7vw;
+    line-height: 1.7vw;
     letter-spacing: -0.1vw;
 }
 
@@ -350,6 +358,26 @@ nav {
     background-color: #EFEAE3;
 }
 
+#feature-project{
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+#page3 #red-round{
+    height: 9px;
+    width: 9px;
+    background-color: #FE320A;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#feature-project p{
+    text-shadow: -1px 0px 2px rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+}
+
+
 .elem {
     position: relative;
     height: 150px;
@@ -399,7 +427,7 @@ nav {
 
 
 
-/* -------------------------------------- */
+/* ----------------- parallax styling --------------------- */
 
 #all-project{
     height: 120vh;
@@ -470,7 +498,7 @@ nav {
 }
 
 .project-button{
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     padding: 2vw;
     background-color: #EFEAE3;
@@ -484,15 +512,13 @@ nav {
     margin-bottom: 8vw;
     border: 1px solid #8a8a8a;
     border-radius: 50px;
-    width: 180px;
+    /* width: 180px; */
     color: black;
     font-weight: 500;
     font-size: 18px;
     overflow: hidden;
     transition: all ease 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
 }
 
 .project-button h4 a {
@@ -524,7 +550,7 @@ nav {
     color: white;
 }
 
-.project-button .size{
+.project-button #size{
     /* height: 10px; */
     width: 40px;
     margin-left: 10px;
@@ -532,7 +558,7 @@ nav {
 }
 
 .project-button h4:hover #size{
-    color: white;
+    color: white; 
 }
 
 
