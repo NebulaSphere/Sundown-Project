@@ -7,7 +7,8 @@
 // });
 
 
-var elemC = document.querySelector("#elem-container")
+function page3Animation() {
+    var elemC = document.querySelector("#elem-container")
 var fixed = document.querySelector("#fixed-image")
 
 elemC.addEventListener("mouseenter" , function(){
@@ -25,3 +26,37 @@ elems.forEach(function(e){
         fixed.style.backgroundImage = `url(${image})`
     })
 })
+}
+
+
+
+// ----------- swiper js code ----------- //
+
+
+function swiperAnimation() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 0,
+        freeMode: true,
+    });
+}
+
+
+swiperAnimation()
+page3Animation()
+
+
+
+const parallax = document.getElementById("parallax");
+
+window.addEventListener("scroll", function() {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset / 35 + "vh";
+})
+
+
+
+
+
+
+
