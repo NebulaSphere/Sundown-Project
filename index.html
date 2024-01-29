@@ -6,15 +6,17 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" href="img/title-icon.png" type="image/x-icon" />
+   
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Sundown Studio</title>
 </head>
 <body>
     
-    <div id="main">
+<div class="page-wrapper">
+    <div id="main" style="position: relative;">
         <div id="page1">
             <nav>
                 <img src="img/Sundown-logo.svg" alt="sundown-logo" />
@@ -40,7 +42,7 @@
                 <div id="hero-3"></div>
             </div>
             <video autoplay loop muted src="videos/main-video.mp4"></video>
-        </div> <!-- page1 div -->
+        </div> <!-- page1 end here -->
 
         <div id="page2">
             <div id="moving-text">
@@ -86,7 +88,7 @@
                 <div id="gooey1"></div>
                 <div id="gooey2"></div>
             </div>
-        </div> <!-- page2 div -->
+        </div> <!-- page2 end here -->
 
         <div id="page3">
             <div id="feature-project">
@@ -127,8 +129,8 @@
         </div>
 
         <div class="project-button">
-            <h4><a href="#">All Project </a><span></span></h4>
-        </div>
+            <div id="button-effect"><a href="#">All Projects </a><span id="arrow-right"></span></div>
+        </div> <!-- page1 end here -->
 
         <div id="all-project">
                 
@@ -149,40 +151,152 @@
                 <div  id="parallax">
                 </div>  
             </div>      
-        </div>
+        </div> <!-- page1 end here -->
 
         <div id="page4">
+            <div id="page4-feature-project">
+                <p><span id="red-round"></span>WHO WE WORK WITH</p>
+            </div>
+           
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="margin-left: 6vw;">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/nike.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Retained Production support across retail and events in NY, 
+                                CHI, LA. Creative Design, Design Management, Production/Project Management, 
+                                and execution of work from concept to installation across the Country.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/converse.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Creative Concepting, Design, Design Management, Project Management, 
+                                and execution of work from concept to installation across the Country. 
+                                Cross functional communication and management of third party partners.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/arcteryx.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Production and design along with install oversight and execution support 
+                                for the SoHo store opening on Broadway St, New York. Also working on creative 
+                                and production work for a new store opening in Glendale, California.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/hunter.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 
+                                57th St, New York, including activations in Women’s, Men’s and Kid’s zones. 
+                                Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. 
+                                Concept design for Holiday boot customization events in stores across winter 2022.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/medialink.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Creative, Design, and Production Partner for 2023 CES. Scope Included creation 
+                                of Branding Identity, Assets, and Digital Content, Design, Production design, 
+                                Production oversight and Installation of client activations for IBM, Delta, 
+                                Instacart, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="margin-left: 6vw;">
+                        <div style="margin-bottom: 30px;">
+                            <img src="img/afterpay.svg" alt="nike" />
+                        </div>
+                        <div>
+                            <p> Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. 
+                                In Partnership with B-Reel scope including creation of Final Design, Design Assets, 
+                                3D Renders, Production design, Production/Partner oversight and creation of a two 
+                                (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, 
+                                Container Store, & Revolve.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> <!-- page4 end here -->
+
+        <div id="page5">
+            
+        </div> <!-- page5 end here -->
+    </div> <!-- main div -->
+
+    <div id="footer">
+        <div class="spacer"></div>
+        <div class="footer-component">
+            <div id="footer-top">
+                <div class="footer-left">
+                    <ul>
+                        <li>Work</li>
+                        <li>Studio</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+
+                    <div>
+                        <p>Get industry insights and creative inspiration straight to your inbox.</p>
+                    </div>
+                    
+                    <form>
+                        <div class="input-bx">
+                            <input type="text" required="required" />
+                            <span>Email</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+           <div class="footer-center">
+                <h1>Sundown</h1>
+           </div>
+    
+            <div class="footer-bottom">
+                <div>
+                    <p>Copyright © Sundown Studio</p>
+                </div>
+    
+                <div>
+                    <p>Brooklyn, NY</p>
+                </div>
+
+                <div>
+                    <li>Instagram</li>
+                </div>  
+    
+                <div>
+                    <li>LinkedIn</li>
                 </div>
             </div>
         </div>
 
-        <div id="page5"></div>
-    </div> <!-- main div -->
+    </div> <!-- footer end here -->
+</div> <!-- wrapper end here -->
 
-    <div id="footer">
-        <div id="footer-top">
-            
-        </div>
-        <h1>Sundown</h1>
-        <div id="footer-bottom">
-            <div class="border-top">
-
-            </div>
-        </div>
-
-    </div>
+     
     
 
     <!------- scriptJS files ------->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
