@@ -182,9 +182,6 @@ body {
 
 
 .nav-toggler{
-    position: fixed;
-    top: 5px;
-    right: 5px;
     border: none;
     display: none;
     background-color: #EFEAE3;
