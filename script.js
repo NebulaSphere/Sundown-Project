@@ -11,6 +11,44 @@ window.addEventListener("scroll", function () {
 
 
 
+window.addEventListener('scroll', reveal);
+
+ function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+    var revone = document.querySelectorAll('.reveal-1');
+
+    for(var  i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 200;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('text-reveal')
+        }
+        else{
+            reveals[i].classList.remove('text-reveal')
+        }
+    }
+
+    for(var  i = 0; i < revone.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = revone[i].getBoundingClientRect().top;
+        var revealpoint = 300;
+
+        if(revealtop < windowheight - revealpoint){
+            revone[i].classList.add('text-reveal-1')
+        }
+        else{
+            revone[i].classList.remove('text-reveal-1')
+        }
+    }
+
+ };
+
+
+
 // -----------mouse move script
 
 

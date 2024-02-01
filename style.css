@@ -1652,3 +1652,28 @@ body {
 
     }
 }
+
+
+.reveal{
+    position: relative;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.reveal.text-reveal{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+.reveal-1{
+    position: relative;
+    transform: translateX(70px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.reveal-1.text-reveal-1{
+    transform: translateX(0px);
+    opacity: 1;
+}
