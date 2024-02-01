@@ -1,57 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="shortcut icon" href="img/title-icon.png" type="image/x-icon" />
-   
-    <link rel="stylesheet" href="css/style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sundown Studio</title>
-</head>
-<body>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
-<div class="page-wrapper">
-    <div id="main" style="position: relative;">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div id="loader">
+        <h1>ENVIRONMENTS</h1>
+        <h1>EXPERIENCES</h1>
+        <h1>CONTENT</h1>
+    </div> -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    
+    <div id="show-img"></div>
+    
+
+    <div id="main">
+
         <div id="page1">
-            <nav>
-                <img src="img/Sundown-logo.svg" alt="sundown-logo" />
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                       <img src="Media/img/Sundown-logo.svg" alt="logo" />
+                    </div>
+                    <button type="button" class="nav-toggler">
+                       <span></span>
+                    </button>
+                    <div class="nav">
+                       <ul>
+                          <li><a href="#">Work</a></li>
+                          <li><a href="#">Studio</a></li>
+                          <li><a href="#">Contact</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+       <!-- <nav class="nav-bar">
+                <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                    alt="logo" />
                 <div id="nav-part2">
                     <h4><a href="#">Work</a></h4>
                     <h4><a href="#">Studio</a></h4>
                     <h4><a href="#">Contact</a></h4>
                 </div>
-            </nav>
-            <div id="center">
-                <div id="left">
-                    <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</h3>
+                <div class="hamburger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
                 </div>
-                <div id="right">
-                    <h1>SPACES <br />
-                        THAT <br />
+            </nav> -->
+            <div class="parah" id="center">
+                <div id="left">
+                    <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and
+                        environments.</h3>
+                </div>
+                <div class="bigh" id="right">
+                    <h1>SPACES <br>
+                        THAT <br>
                         INSPIRE</h1>
                 </div>
+
             </div>
             <div id="hero-shape">
                 <div id="hero-1"></div>
                 <div id="hero-2"></div>
                 <div id="hero-3"></div>
             </div>
-            <video autoplay loop muted src="videos/main-video.mp4"></video>
-        </div> <!-- page1 end here -->
+            <video autoplay loop muted src="Media/videos/main-video.mp4"></video>
+        </div>
 
         <div id="page2">
-            <div id="moving-text">
+            <div class="bigh" id="moving-text">
                 <div class="con">
                     <h1>EXPERIENCES</h1>
                     <div id="gola"></div>
                     <h1>CONTENT</h1>
                     <div id="gola"></div>
-                    <h1>ENVIROMENTS</h1>
+                    <h1>ENVIRONMENTS</h1>
                     <div id="gola"></div>
                 </div>
                 <div class="con">
@@ -59,7 +99,7 @@
                     <div id="gola"></div>
                     <h1>CONTENT</h1>
                     <div id="gola"></div>
-                    <h1>ENVIROMENTS</h1>
+                    <h1>ENVIRONMENTS</h1>
                     <div id="gola"></div>
                 </div>
                 <div class="con">
@@ -67,70 +107,116 @@
                     <div id="gola"></div>
                     <h1>CONTENT</h1>
                     <div id="gola"></div>
-                    <h1>ENVIROMENTS</h1>
+                    <h1>ENVIRONMENTS</h1>
                     <div id="gola"></div>
                 </div>
             </div>
-
-            <div id="page2-bottom">
-                <h1>We are a group of design- <br> driven, goal-focused creators,<br> producers, and designers<br> who believe that the details<br> make all the difference.</h1>
+            <div class="bigh" id="page2-bottom">
+                <h1>We are a group of design- driven, goal-focused creators,  producers, and designers who
+                    believe that the details  make all the difference.</h1>
                 <div id="bottom-part2">
-                    <img src="img/bottom-part2.webp" alt="bottom-img" />
-                    <p> We love to create, we love to solve, we love to collaborate,
-                        and we love to turn amazing ideas into reality.
-                        We’re here to partner with you through every step of the process and know that 
-                        relationships are the most important things we build.
-                    </p>
+                    <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                        alt="">
+                    <p class="para">We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas
+                        into reality. We’re here to partner with you through every step of the process and know that
+                        relationships are the most important things we build.</p>
                 </div>
             </div>
-            
             <div id="gooey">
                 <div id="gooey1"></div>
                 <div id="gooey2"></div>
             </div>
-        </div> <!-- page2 end here -->
-
+        </div>
         <div id="page3">
+            
             <div id="feature-project">
-                <p><span id="red-round"></span>FEATURED PROJECTS</p>
+                <span class="para"><span id="red-round"></span>FEATURED PROJECTS</span>
             </div>
-            <div id="fixed-image"></div>
-
             <div id="elem-container">
-                <div class="elem" data-image="img/bottomimage1.jpg">
+                <div id="elem1" class="elem"
+                    data-image="https://images.unsplash.com/photo-1701001308648-7b731a52b8d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>SOHO 2024</h2>
+                    <div>
+                        <h2>SOHO 2024</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>CONVERSE</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Environment</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage2.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700975928909-da4a46227a47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8">
                     <div class="overlay"></div>
-                    <h2>Play New Kidvision</h2>
+                    <div>
+                        <h2>Play New Kidvision</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>Nike</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Environment</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage3.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1701077137611-9be394bf62f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>Air Force 12021</h2>
+                    <div>
+                        <h2>Air Force 12021</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>Nike</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Environment</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage4.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1701014159309-4a8b84faadfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>50th Anniversary</h2>
+                    <div>
+                        <h2>50th Anniversary</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>Nike</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Environment</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage5.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700924546093-f914fd5b8814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>SOHO NYC</h2>
+                    <div>
+                        <h2>SOHO NYC</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>ARC'TERYX</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Environment</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage6.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>NYFW Popup</h2>
+                    <div>
+                        <h2>NYFW Popup</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>AFTERPAY</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Experiential</p>
+                    </div>
                 </div>
-                <div class="elem" data-image="img/bottomimage7.jpg">
+                <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
-                    <h2>Makers Studio HOI</h2>
+                    <div>
+                        <h2>Makers Studio HOI</h2>
+                    </div>
+                    <div style="z-index: 2;">
+                        <p>Nike</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif;">Experiential</p>
+                    </div>
                 </div>
             </div>
         </div>
 
+
         <div class="project-button">
             <div id="button-effect"><a href="#">All Projects </a><span id="arrow-right"></span></div>
-        </div> <!-- page1 end here -->
+        </div> <!-- page1 end here size -->
 
         <div id="all-project">
                 
@@ -148,21 +234,22 @@
                         </p>
                     </div>
                 </div>
-                <div  id="parallax">
+                <div id="parallax">
                 </div>  
             </div>      
-        </div> <!-- page1 end here -->
+        </div> 
+
 
         <div id="page4">
             <div id="page4-feature-project">
-                <p><span id="red-round"></span>WHO WE WORK WITH</p>
+                <span class="para"><span id="red-round"></span>WHO WE WORK WITH</span>
             </div>
            
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper swiper_mouse">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/nike.svg" alt="nike" />
+                            <img src="Media/img/nike.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Retained Production support across retail and events in NY, 
@@ -173,7 +260,7 @@
                     </div>
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/converse.svg" alt="nike" />
+                            <img src="Media/img/converse.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Creative Concepting, Design, Design Management, Project Management, 
@@ -184,7 +271,7 @@
                     </div>
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/arcteryx.svg" alt="nike" />
+                            <img src="Media/img/arcteryx.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Production and design along with install oversight and execution support 
@@ -195,7 +282,7 @@
                     </div>
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/hunter.svg" alt="nike" />
+                            <img src="Media/img/hunter.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 
@@ -207,7 +294,7 @@
                     </div>
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/medialink.svg" alt="nike" />
+                            <img src="Media/img/medialink.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Creative, Design, and Production Partner for 2023 CES. Scope Included creation 
@@ -219,7 +306,7 @@
                     </div>
                     <div class="swiper-slide" style="margin-left: 6vw;">
                         <div style="margin-bottom: 30px;">
-                            <img src="img/afterpay.svg" alt="nike" />
+                            <img src="Media/img/afterpay.svg" alt="nike" />
                         </div>
                         <div>
                             <p> Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. 
@@ -233,74 +320,93 @@
                     
                 </div>
             </div>
-        </div> <!-- page4 end here -->
+        </div>
+
+        <div id="cursor"></div>
+
 
         <div id="page5">
-            
-        </div> <!-- page5 end here -->
-    </div> <!-- main div -->
+
+        </div>
+       
+        <div class="menu-scr" style="display: block;">
+            <div class="menu-scr1">
+                <div class="menu-scr1-col">
+                    <div><span>WORK</span></div>
+                    <div><span>STUDIO</span></div>
+                    <div><span>CONTACT</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-image">
+        </div>
+        
+    </div>
+
 
     <div id="footer">
         <div class="spacer"></div>
         <div class="footer-component">
-            <div id="footer-top">
-                <div class="footer-left">
-                    <ul>
-                        <li>Work</li>
-                        <li>Studio</li>
-                        <li>Contact</li>
-                    </ul>
+            <div class="footer-component-relative">
+                <div class="hero-footer-shape">
+                    <div class="footer-shape1"></div>
+                    <div class="footer-shape2"></div>
+                    <div class="footer-shape3"></div>
                 </div>
-                <div class="footer-right">
-
-                    <div>
-                        <p>Get industry insights and creative inspiration straight to your inbox.</p>
+                <div id="footer-top">
+                    <div class="footer-left">
+                        <ul>
+                            <li>Work</li>
+                            <li>Studio</li>
+                            <li>Contact</li>
+                        </ul>
                     </div>
-                    
-                    <form>
-                        <div class="input-bx">
-                            <input type="text" required="required" />
-                            <span>Email</span>
+                    <div class="footer-right">
+    
+                        <div>
+                            <p>Get industry insights and creative inspiration straight to your inbox.</p>
                         </div>
-                    </form>
+                        
+                        <form>
+                            <div class="input-bx">
+                                <input type="text" required="required" />
+                                <span>Email</span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
+        
+               <div class="footer-center bigh">
+                    <h1>Sundown</h1>
+               </div>
+        
+                <div class="footer-bottom">
+                    <div>
+                        <p>Copyright © Sundown Studio</p>
+                    </div>
+        
+                    <div>
+                        <p>Brooklyn, NY</p>
+                    </div>
     
-           <div class="footer-center">
-                <h1>Sundown</h1>
-           </div>
-    
-            <div class="footer-bottom">
-                <div>
-                    <p>Copyright © Sundown Studio</p>
-                </div>
-    
-                <div>
-                    <p>Brooklyn, NY</p>
-                </div>
-
-                <div>
-                    <li>Instagram</li>
-                </div>  
-    
-                <div>
-                    <li>LinkedIn</li>
+                    <div>
+                        <li>Instagram</li>
+                    </div>  
+        
+                    <div>
+                        <li>LinkedIn</li>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div> <!-- footer end here -->
-</div> <!-- wrapper end here -->
-
-     
+    </div>
     
 
-    <!------- scriptJS files ------->
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
