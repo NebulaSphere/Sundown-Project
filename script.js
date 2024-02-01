@@ -167,6 +167,7 @@ function swiperAnimation() {
 function menuAnimation() {
 
     var menu = document.querySelector(".row .nav-toggler")
+    var toggleline = document.querySelector(".toggle-line .nav-toggler")
     var full = document.querySelector(".menu-scr")
     var navimg = document.querySelector(".logo img")
     var flag = 0

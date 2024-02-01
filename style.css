@@ -178,69 +178,60 @@ body {
     color: white;
 }
 
+/* ------ toggler ----- */
 
 
-
-.nav-toggler {
+.nav-toggler{
     position: fixed;
     top: 5px;
-    right: 0px;
-    height: 34px;
-    width: 44px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
+    right: 5px;
     border: none;
     display: none;
-    margin-right: 15px;
-    z-index: 999;
+    background-color: #EFEAE3;
 }
 
-.nav-toggler:focus {
-    outline: none;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-}
-
-.nav-toggler span {
-    height: 2px;
-    width: 20px;
-    background-color: black;
-    display: block;
-    margin: auto;
+.nav-toggler li {
     position: relative;
-    transition: all 0.3s ease;
+    padding: 14px 28px;
+    border: 1px solid #c7c7c7;
+    border-radius: 50px;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-toggler.open-menu span {
-    background-color: transparent;
+.nav-toggler li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    z-index: 9;
+    transition: all ease 0.3s;
 }
 
-.nav-toggler span::before,
-.nav-toggler span::after {
+
+
+.nav-toggler .toggle-line{
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+    position: relative;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+.nav-toggler .toggle-line::after{
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    transition: all 0.3s ease;
-}
-
-.nav-toggler span::before {
-    transform: translateY(-6px);
-}
-
-.nav-toggler.open-menu span::before {
-    transform: rotate(45deg);
-}
-
-.nav-toggler span::after {
-    transform: translateY(6px);
-}
-
-.nav-toggler.open-menu span::after {
-    transform: rotate(135deg);
+    top: 10px;
+    left: 0px;
+    height: 2px;
+    width: 30px;
+    background-color: #000;
 }
 
 
